@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    // //bai 1 hop nhat 2 mang roi sap xep
+    // let a=[1,2,4];
+    // let b=[1,3,4];
+    // let c=a.concat(b);
+    // console.log(c)
+    // for (let i = 0; i < c.length-1; i++) { 
+    //         for (let j = i + 1; j < c.length; j++) {
+    //             if (c[i] > c[j]) {
+    //                 let d = c[i];
+    //                 c[i] = c[j];
+    //                 c[j] = d;
+    //             }
+    //         }
+    //     }
+    //     console.log(c);
+    //bai 2
+    let nums=[2,7,11,15];
+    let target=20;
+    let arr=[];
+        for(let i=0;i<nums.length-1;i++){
+            for (let j = i+1; j < nums.length; j++) {
+                if (nums[i]+nums[j]==target) {
+                    arr=[i,j];   
+                    break;
+                } 
+            }
+        }
+    if(arr==""){
+        console.log("khong thao man");
+    }else{
+        console.log(arr);
+    }
+    //bai 3
+    //let str=["huong","thu","tram"]
+
+    
+    
+
+
+
+       
+        
+        
+
+
+        
+   
+
+
+
+  </script>  
+</body>
+</html>
